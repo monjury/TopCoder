@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+//SRM 147 DIV 1 - 350 points
+
 public class PeopleCircle {
 
 	/**

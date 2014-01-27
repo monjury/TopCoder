@@ -1,3 +1,4 @@
+// SRM 476 DIV 2 - 300 points
 public class MatrixShiftings {
 
 	public int minimumShifts(String[] matrix, int value) {
