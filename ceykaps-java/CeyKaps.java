@@ -2,7 +2,7 @@ public class CeyKaps {
 
 	// SRM 148 DIV 2 - 600 points
 	public String decipher(String typed, String[] switches) {
-		
+		 
 		// 1. Initialize a StringBuilder with Upper Case English Alphabets
 		StringBuilder keys = new StringBuilder("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 		
