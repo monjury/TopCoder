@@ -7,7 +7,7 @@ public class EllysSubstringSorter {
 	public String getMin(String S, int L) {
 		String min = runElly(S, L, 0);
 		String current = "";
-		for (int i = 1; i < (S.length() - L); i++) {
+		for (int i = 1; i <= (S.length() - L); i++) {
 			current = runElly(S, L, i);
 			if (isSmaller(min, current)) {
 				min = current;
@@ -34,6 +34,12 @@ public class EllysSubstringSorter {
 		String sorted = new String(chars);
 		String result = S.substring(0, index) + sorted + S.substring(index + L, S.length());
 		return result;
+	}
+	
+	public static void main(String[] args) {
+		EllysSubstringSorter test = new EllysSubstringSorter();
+		System.out.println(test.getMin("AZY", 2));
+		System.out.println("AZYXWVUTSRQPONML".length());
 	}
 
 }
