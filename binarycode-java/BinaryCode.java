@@ -1,4 +1,5 @@
 // SRM 144 DIV 2 - 550 points
+// Failed
 
 public class BinaryCode {
 
