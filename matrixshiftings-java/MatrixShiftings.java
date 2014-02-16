@@ -1,6 +1,8 @@
 // SRM 476 DIV 2 - 300 points
 public class MatrixShiftings {
 
+	int bestSum = 0;
+	
 	public int minimumShifts(String[] matrix, int value) {
 		boolean isFound = false;
 		int xLength = matrix[0].length();
@@ -12,6 +14,7 @@ public class MatrixShiftings {
 					isFound = true;
 					minXShift = getMinShift(j, xLength, minXShift);
 					minYShift = getMinShift(i, matrix.length, minYShift);
+					bestSum = minXShift + minYShift;
 				}
 			}
 		}

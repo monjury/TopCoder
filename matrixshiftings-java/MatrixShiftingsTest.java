@@ -65,5 +65,16 @@ public class MatrixShiftingsTest {
 
         Assert.assertEquals(expected, actual);
     }
+    
+    @Test(timeout = 2000000000)
+    public void testCase5() {
+        String[] matrix = new String[]{"5255562122845300462489141128026009694334864751473", "1904854063160796449573449832138433088147793836562", "9760133164975805690282407824719156431237067912331"};
+        int value = 0;
+
+        int expected = 3;
+        int actual = solution.minimumShifts(matrix, value);
+
+        Assert.assertEquals(expected, actual);
+    }
 
 }
