@@ -3,6 +3,9 @@ public class DistanceBetweenStrings {
 	// SRM 350 DIV 2 - 250 points
 	
 	public int getDistance(String a, String b, String letterSet) {
+		a = a.toLowerCase();
+		b = b.toLowerCase();
+		letterSet = letterSet.toLowerCase();
 		int length = letterSet.length();
 		int[] firstOccurences = new int[length];
 		int[] secondOccurences = new int[length];

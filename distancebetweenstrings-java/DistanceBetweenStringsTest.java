@@ -82,5 +82,17 @@ public class DistanceBetweenStringsTest {
 
         Assert.assertEquals(expected, actual);
     }
+    
+    @Test(timeout = 2000)
+    public void testCase6() {
+        String a = "ToPcOdEr";
+        String b = "tOpCoDeR";
+        String letterSet = "wxyz";
+
+        int expected = 0;
+        int actual = solution.getDistance(a, b, letterSet);
+
+        Assert.assertEquals(expected, actual);
+    }
 
 }
