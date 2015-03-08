@@ -1,3 +1,6 @@
+
+// SRM 370 DIV 2 - 250 points
+
 public class Containers {
 
 	public int wastedSpace(int[] containers, int[] packages) {
